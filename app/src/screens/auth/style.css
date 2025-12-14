@@ -44,6 +44,26 @@ button:hover{
     border: 1px solid #040404;
     background-color: #f9f9f9;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);   
+}
+
+.error{
+    color: red;
+    font-size:0.5rem;
+
+}
+
+#strengthText{
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+.weak{
+    color:red;
+}
+.medium{
+    color:yellow;
+}
+.strong{
+    color:green;
 }
