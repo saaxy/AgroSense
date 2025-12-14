@@ -1,6 +1,5 @@
 /* Main Page Stylesheet */
-/* Lines 3-24 contain styling of the header */
-/* Lines 27-56 contain styling of the navigation window and its components */
+/* Styling  instructions for the header starts here */
 #header {
     height: 60px;
     width: 100%;
@@ -28,18 +27,7 @@
     justify-content: center;
 }
 
-#navigation_window {
-    position: relative;
-    
-    height: calc(100% - 60px);
-    width: 100%;
-    
-    background-color: green;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+/* Styling  instructions for the navigation window and its components starts here */
 #navigation_window {
     box-sizing: border-box;
 
@@ -61,4 +49,8 @@
 
     font-size: 20px;
     color: black;
+}
+#navigation_window > button:hover {
+    background-color: green;
+    color: white; 
 }
