@@ -15,3 +15,9 @@ let fertilizerBtn = document.getElementById('fertilizer_recommendation');
 fertilizerBtn.addEventListener('click', () => {
     window.location.href = '../fertilizer/fertilizer.html';
 });
+
+//Logout button navigation
+let logoutBtn = document.getElementById('Logout_button');
+logoutBtn.addEventListener('click', () => {
+    window.location.href = '../auth/login.html';
+});
