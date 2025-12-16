@@ -9,22 +9,23 @@
 <body>
     <div id="fertilizer-screen">
         <h1>Fertilizer Recommendations</h1>
-        <p id="welcome-message">Welcome to the Fertilizer screen.</br> Here you can find information about different types of fertilizers and their uses.</p>
+        <p id="welcome-message">Welcome to the Fertilizer screen.</p>
         <form id="fertilizer-form">
-            <label for="crop-type">Select Crop Type:</label>
-            <select id="crop-type" name="crop-type">
-                <option value="select">--Select--</option>
-                <option value="wheat">Wheat</option>
-                <option value="rice">Rice</option>
-                <option value="maize">Maize</option>
-                <option value="cotton">Cotton</option>
-            </select>
-            <br><br>
+            <div class="container-for-input">
+                <label for="crop-type">Select Crop Type:</label>
+                <select id="crop-type" name="crop-type">
+                    <option value="select">--Select--</option>
+                    <option value="wheat">Wheat</option>
+                    <option value="rice">Rice</option>
+                    <option value="maize">Maize</option>
+                    <option value="cotton">Cotton</option>
+                </select>
+            </div>
             <button id="submit">Get Fertilizer Recommendations</button>
         </form>
         <p id="recommendation-output">  </p>
+        <button id="back-button">Back to Main Page</button>
     </div>
-    <button id="back-button">Back to Main Page</button>
     <script src="fertilizer.js"></script>
 </body>
 </html>
