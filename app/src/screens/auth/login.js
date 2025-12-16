@@ -12,6 +12,8 @@ function checkStrength(){
 
     if(password.length === 0){
         strengthText.textContent = "";
+        strengthText.className ="";
+        return;
         
     }
     else if(strength <= 2){
@@ -28,15 +30,9 @@ function checkStrength(){
 }
 
 function isStrongPassword(password){
-    return ((password.length >= 8) && /[A-Z]/.test(password) && /[a-z]/.test(password) && /[0-9]/.test(password) && /[@#$%^&*!]/.test(password));
+    return ((password.length >= 8) && /[A-Z]/.test(password) && /[a-z]/.test(password) && /[0-9]/.test(password) && /[!@#$%^&*]/.test(password));
 
 }
-
-if(!isStrongPassword(password)){
-    alert("Password must be Strong");
-    return;
-}
-
 function togglePassword(){
     const pass = document.getElementById("password");
     pass.type = pass.type === "password" ? "text" : "password";
@@ -44,7 +40,7 @@ function togglePassword(){
 }
 
 document.getElementById("loginform").addEventListener("submit" , function(e){
-    e.prevenDefault(); //here stop the form submission
+    e.preventDefault(); //here stop the form submission
 
     const username = document.getElementById("username").value.trim();
     const password = document.getElementById("password").value.trim();
@@ -64,7 +60,10 @@ document.getElementById("loginform").addEventListener("submit" , function(e){
      if(password === ""){
         passwordError.textContent = "password is required";
         isValid = false;
-     }
+     }else if(!isStrongPassword(password)){
+    alert("Password must be Strong");
+    return;
+    }
 
      if(isValid){
         alert("Login successful");

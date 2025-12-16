@@ -4,8 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crop Recommendations</title>
+    <link rel="stylesheet" href="advice.css">
 </head>
 <body>
-    <p> Test text to check if crop advice page is working</p>    
+
+    <h1>Crop Recommendations</h1>
+
+    <!-- Crop Recommendations Box -->
+
+    <div class="container">
+        <div class="crop-Box">
+
+            <form id="Crop-Form">
+                <div class="input">
+                    <label for="type" >Soil Type: </label>
+                    <select  id="soil">
+                        <option value="">--Select Soil Type--</option>
+                        <option >Black Soil</option>
+                        <option >Alluvial Soil</option>
+                        <option >Red Soil</option>
+                        <option >Laterite Soil</option>
+                        <option >Desert Soil</option>
+                        <option >Forest Soil</option>
+                    </select>
+                </div>
+
+                <div class="input">
+                    <label for="season">Season: </label>
+                    <select  id="season">
+                        <option value="">--Select season--</option>
+                        <option>Kharif</option>
+                        <option>Rabi</option>
+                        <option>Zaid</option>
+                    </select>
+                </div>
+
+                <div class="input">
+                    <label for="water">Water: </label>
+                    <select  id="water">
+                        <option value="">--Select Water--</option>
+                        <option>High</option>
+                        <option>Medium</option>
+                        <option>Low</option>
+                    </select>
+                </div>
+
+                <div class="input">
+                    <label for="region">Region: </label>
+                    <select id="region">
+                        <option value="">--Select Region--</option>
+                        <option></option>
+                    </select>
+
+                </div>
+
+                <button type="submit" class="btn">Get Crop Recommendations</button>
+
+                <button type="return"  class="btn2">Back to Main Page</button>
+
+            </form>
+
+            <!-- Result -->
+             <div id="result" class="result-box"></div>
+
+        </div>
+
+    </div>
+    
+    <script src="advice.js"></script>
+
 </body>
 </html>
