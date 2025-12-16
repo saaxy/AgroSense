@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fertilizer</title>
+    <link rel="stylesheet" href="fertilizer.css">
+</head>
+<body>
+    <div id="fertilizer-screen">
+        <h1>Fertilizer Recommendations</h1>
+        <p id="welcome-message">Welcome to the Fertilizer screen.</br> Here you can find information about different types of fertilizers and their uses.</p>
+        <form id="fertilizer-form">
+            <label for="crop-type">Select Crop Type:</label>
+            <select id="crop-type" name="crop-type">
+                <option value="select">--Select--</option>
+                <option value="wheat">Wheat</option>
+                <option value="rice">Rice</option>
+                <option value="maize">Maize</option>
+                <option value="cotton">Cotton</option>
+            </select>
+            <br><br>
+            <button id="submit">Get Fertilizer Recommendations</button>
+        </form>
+        <p id="recommendation-output">  </p>
+    </div>
+    <button id="back-button">Back to Main Page</button>
+    <script src="fertilizer.js"></script>
+</body>
+</html>
