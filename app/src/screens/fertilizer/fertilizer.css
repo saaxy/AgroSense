@@ -1,0 +1,44 @@
+#fertilizer-screen {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 1px solid #040404;
+    background-color: lightgreen;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+    text-align: center;
+}
+
+h1 {
+    color: green;
+}
+
+#welcome-message {
+    margin-bottom: 1rem;
+}
+
+#fertilizer-form {
+    font-size: 1.1rem;
+}
+
+.container-for-input {
+    padding: 1rem;
+    margin: 1rem;
+
+    background-color: lightcyan;
+
+    border: 1px solid green;
+    border-radius: 4px;
+}
+
+#submit {
+    background-color: green;
+    color: white;
+
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+
+    cursor: pointer; /* Change cursor to pointer on hover */
+}

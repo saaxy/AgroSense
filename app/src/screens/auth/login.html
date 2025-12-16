@@ -2,13 +2,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgroSnese-Login</title>
+    <title>AgroSense-Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="container">
-        <h1 class="title">🌾 AgroSense,A Farmer Friend🌾</h1>
+        <div class="title">
+            <img src="../../assets/logo.png" alt="AgroSense Logo" class="logo" height = "60">
+            <h2>A Farmer's Friend</h2>
+        </div>
+        <!-- <h1 class="title">🌾AgroSense,A Farmer Friend🌾</h1> -->
         <div class=" login-box">
             <h2>Login</h2>
             <form id="loginform"> 
@@ -22,7 +26,7 @@
                 <div class="input-group">
                     <label>Password</label>
                     <input type="password" id="password" placeholder="Enter your Password" onkeyup="checkStrength()">
-                    <small class="error" id="passwordError"></small>
+                    <small class="error" id="passwordError">  </small>
                     <span onclick="togglePassowrd()"></span>
                     <small id="strengthText"></small>
                 </div>
