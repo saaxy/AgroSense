@@ -16,6 +16,12 @@ fertilizerBtn.addEventListener('click', () => {
     window.location.href = '../fertilizer/fertilizer.html';
 });
 
+// Cost Calculator button navigation
+let costCalcBtn = document.getElementById('cost_calculator');
+costCalcBtn.addEventListener('click', () => {
+    window.location.href = '../cost_calculator/calc.html';
+});
+
 //Logout button navigation
 let logoutBtn = document.getElementById('Logout_button');
 logoutBtn.addEventListener('click', () => {

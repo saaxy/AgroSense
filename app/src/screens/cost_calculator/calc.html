@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <h1>Calculate Expenses</h1>
+    <div class="seed-cost-container">
+        <h3>Seed Cost Calculator</h3>
+        <form class="seed-cost-form">
+            <label for="seed-price">Seed Price per grams (rupees):</label>
+            <input type="number" id="item-price" name="seed-cost" required><br><br>
+
+            <label for="seed-quantity">Seed Quantity (in grams):</label>
+            <input type="number" id="quantity" name="seed-quantity" required><br><br>
+
+            <label for="tax-rate">Tax Rate (%):</label>
+            <input type="number" id="tax-rate" name="tax-rate" required><br><br> 
+        </form>
+    </div>
+
+    <h2 id="total-cost"></h2>
+    <!-- <button type="button" onclick="calculateTotal()">Calculate Total Cost</button> -->
+
+    <script src ="calculator.js"></script>    
+</body>
+</html>

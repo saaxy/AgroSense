@@ -1,0 +1,24 @@
+h1 {
+    text-align: center;
+    color: #2E8B57;
+}
+.seed-cost-container {
+    margin: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    border: green 2px solid;
+    border-radius: 5px;
+
+    background-color: yellowgreen;
+
+    color: black;
+}
+.seed-cost-form {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+
+    font-size: 18px;
+}
