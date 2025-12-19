@@ -17,16 +17,14 @@
 
             <form id="Crop-Form">
                 <div class="input">
-                    <label for="type" >Soil Type: </label>
-                    <select  id="soil">
-                        <option value="">--Select Soil Type--</option>
-                        <option >Black Soil</option>
-                        <option >Alluvial Soil</option>
-                        <option >Red Soil</option>
-                        <option >Laterite Soil</option>
-                        <option >Desert Soil</option>
-                        <option >Forest Soil</option>
-                    </select>
+                    <label for="Nitrogen amount" >Nitrogen(N): </label>
+                   <input type="float" id="N value" required> <br><br>
+
+                   <label for="Phosphorus amount" >Phosporous(P): </label>
+                   <input type="float" id="P value" required> <br><br>
+
+                   <label for="potassium amount" >Potassium(K): </label>
+                   <input type="float" id="K value" required> <br><br>
                 </div>
 
                 <div class="input">
@@ -40,24 +38,22 @@
                 </div>
 
                 <div class="input">
-                    <label for="water">Water: </label>
-                    <select  id="water">
-                        <option value="">--Select Water--</option>
-                        <option>High</option>
-                        <option>Medium</option>
-                        <option>Low</option>
-                    </select>
+                    <label for="Temperature">Temperature: </label>
+                    <input type="float" id="temp" required> <br><br>
+
+                    <label for="humidity">Humidity: </label>
+                    <input type="float" id="humidity" required> <br><br>
+
+                    <label for="Ph">ph: </label>
+                    <input type="float" id="ph" required> <br><br>
+
+                    <label for="rainFall">Rainfall: </label>
+                    <input type="float" id="rainfall" required> <br><br>
+
+                    
                 </div>
 
-                <div class="input">
-                    <label for="region">Region: </label>
-                    <select id="region">
-                        <option value="">--Select Region--</option>
-                        <option></option>
-                    </select>
-
-                </div>
-
+               
                 <button type="submit" class="btn">Get Crop Recommendations</button>
 
                 <button type="return"  class="btn2">Back to Main Page</button>
