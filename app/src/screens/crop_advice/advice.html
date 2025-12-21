@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="advice.css">
 </head>
 <body>
-
+    
     <h1>Crop Recommendations</h1>
 
     <!-- Crop Recommendations Box -->
@@ -18,13 +18,13 @@
             <form id="Crop-Form">
                 <div class="input">
                     <label for="Nitrogen amount" >Nitrogen(N): </label>
-                   <input type="float" id="N value" required> <br><br>
+                   <input type="number" id="N"  placeholder="Enter Nitrogen Value"> <br><br>
 
                    <label for="Phosphorus amount" >Phosporous(P): </label>
-                   <input type="float" id="P value" required> <br><br>
+                   <input type="float" id="P"  placeholder="Enter Phosphorus Value" required> <br><br>
 
                    <label for="potassium amount" >Potassium(K): </label>
-                   <input type="float" id="K value" required> <br><br>
+                   <input type="float" id="K"  placeholder="Enter Potassium Value" required> <br><br>
                 </div>
 
                 <div class="input">
@@ -39,24 +39,24 @@
 
                 <div class="input">
                     <label for="Temperature">Temperature: </label>
-                    <input type="float" id="temp" required> <br><br>
+                    <input type="float" id="temp" placeholder="Enter Temperature in (°C)" required> <br><br>
 
                     <label for="humidity">Humidity: </label>
-                    <input type="float" id="humidity" required> <br><br>
+                    <input type="float" id="humidity" placeholder="Enter humidity in %" required> <br><br>
 
                     <label for="Ph">ph: </label>
-                    <input type="float" id="ph" required> <br><br>
+                    <input type="float" id="ph"placeholder="Enter soil pH" required> <br><br>
 
                     <label for="rainFall">Rainfall: </label>
-                    <input type="float" id="rainfall" required> <br><br>
+                    <input type="float" id="rainfall" placeholder="Enter rainfall in mm"  required> <br><br>
 
                     
                 </div>
 
                
-                <button type="submit" class="btn">Get Crop Recommendations</button>
+                <button type="submit" class="btn" onclick="getCrop()">Get Crop Recommendations</button>
 
-                <button type="return"  class="btn2">Back to Main Page</button>
+                <button type="return"  class="btn2" id="return">Back to Main Page</button>
 
             </form>
 
