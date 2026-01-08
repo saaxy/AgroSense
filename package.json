@@ -1,0 +1,27 @@
+{
+  "name": "agrosense",
+  "version": "1.0.0",
+  "description": "farmer's friend",
+  "homepage": "https://github.com/saaxy/AgroSense#readme",
+  "bugs": {
+    "url": "https://github.com/saaxy/AgroSense/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saaxy/AgroSense.git"
+  },
+  "license": "ISC",
+  "author": "Sakshi Khendad and Tanay Doble",
+  "type": "commonjs",
+  "main": "app.jsx",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {}
+}
