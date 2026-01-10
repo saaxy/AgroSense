@@ -3,5 +3,10 @@ const app = express();
 const port = process.env.PORT || 3000;
 const path = require('path');
 
-// app.get('/', (req, res) => {
-//     res.send
+app.get('/', (req, res) => {
+    res.send('Root path accessed');
+});
+
+app.listen(port, () => {
+    console.log(`Server is running on http://localhost:${port}`);
+});
