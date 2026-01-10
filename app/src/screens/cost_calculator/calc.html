@@ -9,21 +9,26 @@
 <body>
     <h1>Calculate Expenses</h1>
     <div class="seed-cost-container">
-        <h3>Seed Cost Calculator</h3>
+    
         <form class="seed-cost-form">
+            <div class="input">
             <label for="seed-price">Seed Price per grams (rupees):</label>
-            <input type="number" id="item-price" name="seed-cost" required><br><br>
+            <input type="number" id="item-price" name="seed-cost" placeholder="seed cost " required /><br><br>
 
             <label for="seed-quantity">Seed Quantity (in grams):</label>
-            <input type="number" id="quantity" name="seed-quantity" required><br><br>
+            <input type="number" id="quantity" name="seed-quantity" placeholder="seed quantity in kg" required/><br><br>
 
             <label for="tax-rate">Tax Rate (%):</label>
-            <input type="number" id="tax-rate" name="tax-rate" required><br><br> 
+            <input type="number" id="tax-rate" name="tax-rate" placeholder="current tax rate" required/><br><br> 
+
+            </div>
+            <button type="submit" class="btn" onclick="getCost()">Get total cost</button>
+            
         </form>
     </div>
 
     <h2 id="total-cost"></h2>
-    <!-- <button type="button" onclick="calculateTotal()">Calculate Total Cost</button> -->
+    
 
     <script src ="calculator.js"></script>    
 </body>

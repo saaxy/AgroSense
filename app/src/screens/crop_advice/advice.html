@@ -18,7 +18,7 @@
             <form id="Crop-Form">
                 <div class="input">
                     <label for="Nitrogen amount" >Nitrogen(N): </label>
-                   <input type="number" id="N"  placeholder="Enter Nitrogen Value"> <br><br>
+                   <input type="number" id="N"  placeholder="Enter Nitrogen Value" required> <br><br>
 
                    <label for="Phosphorus amount" >Phosporous(P): </label>
                    <input type="float" id="P"  placeholder="Enter Phosphorus Value" required> <br><br>
@@ -48,23 +48,16 @@
                     <input type="float" id="ph"placeholder="Enter soil pH" required> <br><br>
 
                     <label for="rainFall">Rainfall: </label>
-                    <input type="float" id="rainfall" placeholder="Enter rainfall in mm"  required> <br><br>
-
-                    
+                    <input type="float" id="rainfall" placeholder="Enter rainfall in mm"  required> <br><br> 
                 </div>
-
-               
                 <button type="submit" class="btn" onclick="getCrop()">Get Crop Recommendations</button>
-
                 <button type="return"  class="btn2" id="return">Back to Main Page</button>
-
             </form>
 
             <!-- Result -->
-             <div id="result" class="result-box"></div>
+           <div id="result" class="result-box"></div>
 
         </div>
-
     </div>
     
     <script src="advice.js"></script>
