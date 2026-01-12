@@ -10,7 +10,7 @@ const LoginPage = () => {
         />
         <h2>A Farmer's Friend</h2>
       </div>
-      {/* <h1 class="title">🌾AgroSense,A Farmer Friend🌾</h1> */}
+      <h1 class="title">🌾AgroSense,A Farmer Friend🌾</h1>
       <div className=" login-box">
         <h2>Login</h2>
         <form id="loginform">
