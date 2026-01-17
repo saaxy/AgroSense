@@ -22,11 +22,6 @@
     "dev": "node server/server.js"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "express": "^5.2.1",
-    "react-router-dom": "^7.12.0"
-=======
     "express": "^5.2.1"
->>>>>>> 437dc54b9abcfb0482dac9f7a5db47dcc9e44652
   }
 }
