@@ -4,14 +4,25 @@ import {
   createRoutesFromElements,
   RouterProvider,
 } from "react-router-dom";
-import LoginPage from "../pages/LoginPage";
 
-const Router = createBrowserRouter(
-  createRoutesFromElements(<Route path="/" element={<LoginPage />} />)
+import LoginPage from "../pages/LoginPage";
+import Fertilizer from "../pages/Fertilizer";
+import Main from "../pages/Main";
+import Calculator from "../pages/Calculator";
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <>
+      <Route path="/" element={<LoginPage />} />
+      <Route path="/main" element={<Main />} />
+      <Route path="/fertilizer" element={<Fertilizer />} />
+      <Route path="/calculator" element={<Calculator />} />
+    </>,
+  ),
 );
 
 const App = () => {
-  return <RouterProvider router={Router} />;
+  return <RouterProvider router={router} />;
 };
 
 export default App;

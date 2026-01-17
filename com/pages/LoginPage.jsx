@@ -32,7 +32,7 @@ const LoginPage = () => {
               onkeyup="checkStrength()"
             />
             <small className="error" id="passwordError"></small>
-            <span onclick="togglePassowrd()" />
+            <span onClick={togglePassowrd()} />
             <small id="strengthText" />
           </div>
           <button type="submit" className="btn">
