@@ -3,29 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgroSense</title>
-    <link rel="stylesheet" href="main_page_style.css">
+    <title>AgroSense - Home</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <div id="header">
-        <img src="../../assets/logo.png" alt="AgroSense Logo" id="logo" height="60">
-        
-        <button id="profile_button">
-        <img src="../../assets/profile_icon.png" alt="Profile Icon" width="30" height="30">
+    <div id="header" style="display:flex; justify-content:space-between; width:100%; max-width:600px; justify-content:center; margin-bottom:20px;">
+        <img src="../../assets/logo.png" alt="AgroSense Logo" height="50">
+        <button id="profile_button" style="background:none; border:none; cursor:pointer;">
+            <img src="../../assets/profile_icon.png" alt="Profile" width="40" height="40">
         </button>
     </div>
     
-    <div id="navigation_window">
-        <button  id="crop_advice">Crop Advice</button>
-        <button  id="fertilizer_recommendation">Fertilizer Recommendation</button> 
-        <button  id="weather_updates">Weather Today</button>
-        <button  id="market_prices">Market Prices</button>
-        <button  id="cost_calculator">Cost Calculator</button>
-        <button  id="government_schemes">Government Schemes</button> 
+    <div class="container">
+        <h2>Dashboard</h2>
+        <div class="dashboard-grid" id="navigation_window">
+            <button class="nav-card" id="crop_advice">🌾<br>Crop Advice</button>
+            <button class="nav-card" id="fertilizer_recommendation">🧪<br>Fertilizer</button> 
+            <button class="nav-card" id="weather_updates">☁️<br>Weather</button>
+            <button class="nav-card" id="market_prices">💰<br>Market Prices</button>
+            <button class="nav-card" id="cost_calculator">🧮<br>Calculator</button>
+            <button class="nav-card" id="government_schemes">🏛️<br>Gov Schemes</button> 
+        </div>
+        
+        <button id="Logout_button" class="btn-secondary" style="margin-top: 30px; border-color: #d32f2f; color: #d32f2f; width: 50%; ">Logout</button>  
     </div>
 
-    <button id="Logout_button">Logout</button>  
-    
     <script src="main.js"></script>
 </body>
 </html>

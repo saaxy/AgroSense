@@ -3,28 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fertilizer</title>
-    <link rel="stylesheet" href="fertilizer.css">
+    <title>AgroSense - Fertilizer</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <div id="fertilizer-screen">
-        <h1>Fertilizer Recommendations</h1>
-        <p id="welcome-message">Welcome to the Fertilizer screen.</p>
+    <div class="container" id="fertilizer-screen">
+        <h1>Fertilizer Advisor</h1>
+        <p style="text-align:center; margin-bottom:20px; color:#666;">Select your crop to get tailored advice.</p>
+        
         <form id="fertilizer-form">
-            <div class="container-for-input">
+            <div class="input">
                 <label for="crop-type">Select Crop Type:</label>
                 <select id="crop-type" name="crop-type">
-                    <option value="select">--Select--</option>
+                    <option value="select">-- Select Crop --</option>
                     <option value="wheat">Wheat</option>
                     <option value="rice">Rice</option>
                     <option value="maize">Maize</option>
                     <option value="cotton">Cotton</option>
                 </select>
             </div>
-            <button id="submit">Get Fertilizer Recommendations</button>
+            <button id="submit" type="button" class="btn">Get Recommendations</button>
+            <button id="back-button" type="button" class="btn2">Back to Dashboard</button>
         </form>
-        <p id="recommendation-output">  </p>
-        <button id="back-button">Back to Main Page</button>
+        
+        <p id="recommendation-output" style="margin-top:20px; font-weight:bold;"></p>
     </div>
     <script src="fertilizer.js"></script>
 </body>

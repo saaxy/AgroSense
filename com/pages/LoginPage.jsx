@@ -29,10 +29,10 @@ const LoginPage = () => {
               type="password"
               id="password"
               placeholder="Enter your Password"
-              onkeyup="checkStrength()"
+              // {/*onkeyup="checkStrength()"*/}
             />
             <small className="error" id="passwordError"></small>
-            <span onClick={togglePassowrd()} />
+            {/* <span onClick={togglePassowrd()} /> */}
             <small id="strengthText" />
           </div>
           <button type="submit" className="btn">

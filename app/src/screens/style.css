@@ -1,0 +1,106 @@
+/* style.css - Universal Styles for AgroSense */
+:root {
+    --primary: #2E7D32;
+    --primary-dark: #1B5E20;
+    --secondary: #F9A825;
+    --bg-color: #F1F8E9;
+    --card-bg: #ffffff;
+    --text-main: #333;
+    --error: #d32f2f;
+    --radius: 12px;
+    --shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0;  }
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Containers */
+.container, .login-box, .crop-Box, .seed-cost-container, #fertilizer-screen {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    width: 100%;
+    max-width: 400px; /* Mobile friendly max-width */
+    margin: 0 auto;
+}
+
+/* Headers & Logos */
+.title, h1, h2 { text-align: center; color: var(--primary); margin-bottom: 1.5rem; }
+.logo { display: block; margin: 0 auto 10px;}
+
+/* Forms & Inputs */
+.input-group, .input { margin-bottom: 1rem; }
+label { display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--primary-dark); }
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+input:focus, select:focus { border-color: var(--primary); outline: none; }
+
+/* Buttons */
+button.btn, button#submit, button#getCrop {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-family: 'Times New Roman';
+    margin-top: 1rem;
+}
+button.btn:hover, button#submit:hover { background-color: var(--primary-dark); }
+
+/* Secondary/Back Buttons */
+.btn-secondary, .btn2, #return, #back-button {
+    background-color: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Dashboard Grid (Index Page) */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 15px;
+    width: 100%;
+    max-width: 600px;
+}
+.nav-card {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: var(--radius);
+    text-align: center;
+    box-shadow: var(--shadow);
+    border: none;
+    cursor: pointer;
+    color: var(--primary);
+    font-weight: 600;
+    transition: transform 0.2s;
+}
+.nav-card:hover { transform: translateY(-3px); background-color: var(--primary); color: white; }
+
+/* Utility */
+.error { color: var(--error); font-size: 0.85rem; }
+.signup-text { text-align: center; margin-top: 1rem; }
