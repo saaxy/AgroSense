@@ -9,6 +9,7 @@ import LoginPage from "../pages/LoginPage";
 import Fertilizer from "../pages/Fertilizer";
 import Main from "../pages/Main";
 import Calculator from "../pages/Calculator";
+import ProfilePage from "../pages/ProfilePage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -17,6 +18,7 @@ const router = createBrowserRouter(
       <Route path="/main" element={<Main />} />
       <Route path="/fertilizer" element={<Fertilizer />} />
       <Route path="/calculator" element={<Calculator />} />
+      <Route path="/profile" element={<ProfilePage />} />
     </>,
   ),
 );
