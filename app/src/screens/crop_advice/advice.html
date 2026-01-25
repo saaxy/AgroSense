@@ -3,64 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crop Recommendations</title>
-    <link rel="stylesheet" href="advice.css">
+    <title>AgroSense - Crop Advice</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     
-    <h1>Crop Recommendations</h1>
-
-    <!-- Crop Recommendations Box -->
-
     <div class="container">
+        <h1>Crop Recommendation</h1>
         <div class="crop-Box">
-
             <form id="Crop-Form">
-                <div class="input">
-                    <label for="Nitrogen amount" >Nitrogen(N): </label>
-                   <input type="number" id="N"  placeholder="Enter Nitrogen Value" required> <br><br>
-
-                   <label for="Phosphorus amount" >Phosporous(P): </label>
-                   <input type="float" id="P"  placeholder="Enter Phosphorus Value" required> <br><br>
-
-                   <label for="potassium amount" >Potassium(K): </label>
-                   <input type="float" id="K"  placeholder="Enter Potassium Value" required> <br><br>
+                <div class="input-group">
+                    <label style="color:var(--secondary);">Soil Nutrients</label>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px;">
+                        <input type="number" id="N" placeholder="N" required title="Nitrogen">
+                        <input type="number" id="P" placeholder="P" required title="Phosphorus">
+                        <input type="number" id="K" placeholder="K" required title="Potassium">
+                    </div>
+                    <small>Enter Nitrogen, Phosphorus, Potassium values</small>
                 </div>
 
                 <div class="input">
-                    <label for="season">Season: </label>
-                    <select  id="season">
-                        <option value="">--Select season--</option>
+                    <label for="ph">Soil pH Level:</label>
+                    <input type="number" step="0.1" id="ph" placeholder="e.g. 6.5" required>
+                </div>
+
+                <div class="input-group">
+                    <label style="color:var(--secondary);">Environmental Conditions</label>
+                    <select id="season" class="input" style="margin-bottom:10px;">
+                        <option value="">-- Select Season --</option>
                         <option>Kharif</option>
                         <option>Rabi</option>
                         <option>Zaid</option>
                     </select>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                        <input type="number" id="temp" placeholder="Temp (°C)" required>
+                        <input type="number" id="humidity" placeholder="Humidity (%)" required>
+                    </div>
+                    <input type="number" id="rainfall" placeholder="Rainfall (mm)" style="margin-top:10px;" required>
                 </div>
 
-                <div class="input">
-                    <label for="Temperature">Temperature: </label>
-                    <input type="float" id="temp" placeholder="Enter Temperature in (°C)" required> <br><br>
-
-                    <label for="humidity">Humidity: </label>
-                    <input type="float" id="humidity" placeholder="Enter humidity in %" required> <br><br>
-
-                    <label for="Ph">ph: </label>
-                    <input type="float" id="ph"placeholder="Enter soil pH" required> <br><br>
-
-                    <label for="rainFall">Rainfall: </label>
-                    <input type="float" id="rainfall" placeholder="Enter rainfall in mm"  required> <br><br> 
-                </div>
-                <button type="submit" class="btn" onclick="getCrop()">Get Crop Recommendations</button>
-                <button type="return"  class="btn2" id="return">Back to Main Page</button>
+                <button type="button" class="btn" id="getCrop" onclick="getCrop()">Get Recommendation</button>
+                <button type="button" class="btn2" id="return">Back to Dashboard</button>
             </form>
 
-            <!-- Result -->
-           <div id="result" class="result-box"></div>
-
+            <div id="result" class="result-box" style="margin-top: 20px; font-weight: bold; text-align: center;"></div>
         </div>
     </div>
     
     <script src="advice.js"></script>
-
 </body>
 </html>

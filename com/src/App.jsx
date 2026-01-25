@@ -16,9 +16,9 @@ const router = createBrowserRouter(
       <Route path="/" element={<LoginPage />} />
       <Route path="/main" element={<Main />} />
       <Route path="/fertilizer" element={<Fertilizer />} />
-      <Route path ="/calculator" element={<Calculator />} />
-    </>
-  )
+      <Route path="/calculator" element={<Calculator />} />
+    </>,
+  ),
 );
 
 const App = () => {
@@ -26,6 +26,3 @@ const App = () => {
 };
 
 export default App;
-
-
-

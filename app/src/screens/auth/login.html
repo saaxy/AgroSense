@@ -1,50 +1,42 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgroSense-Login</title>
-    <link rel="stylesheet" href="style.css">
+    <title>AgroSense - Login</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-
     <div class="container">
         <div class="title">
-            <img src="../../assets/logo.png" alt="AgroSense Logo" class="logo" height = "60">
+            <img src="../../assets/logo.png" alt="AgroSense Logo" class="logo" height="80">
             <h2>A Farmer's Friend</h2>
         </div>
-        <!-- <h1 class="title">🌾AgroSense,A Farmer Friend🌾</h1> -->
-        <div class=" login-box">
-            <h2>Login</h2>
+        
+        <div class="login-box">
+            <h2>Welcome Back</h2>
             <form id="loginform"> 
                 <div class="input-group">
-                    <label>Username</label>
-                    <input type="username" id="username" placeholder="Enter your username or Email">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter username or email">
                     <small class="error" id="usernameError"></small>
-                    
                 </div>
 
                 <div class="input-group">
-                    <label>Password</label>
-                    <input type="password" id="password" placeholder="Enter your Password" onkeyup="checkStrength()">
-                    <small class="error" id="passwordError">  </small>
-                    <span onclick="togglePassowrd()"></span>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter password" onkeyup="checkStrength()">
+                    <small class="error" id="passwordError"></small>
                     <small id="strengthText"></small>
                 </div>
                 
-                <button type="submit" class="btn">Submit</button>
+                <button type="submit" class="btn">Login</button>
 
                 <p class="signup-text">
-                    Don't have an account? <a href="#">Register</a>
+                    New to AgroSense? <a href="#" style="color: blue; font-weight:bold;">Register Here</a>
                 </p>
-               
             </form>
-            
         </div>
-
     </div>
     <script src="login.js"></script>
-
-    
-    
 </body>
 </html>
