@@ -23,5 +23,4 @@ const Header = (page = "other") => {
     </Fragment>
   );
 };
-
 export default Header;
