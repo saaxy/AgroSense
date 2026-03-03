@@ -2,6 +2,8 @@ import React from "react";
 import { MdEdit } from "react-icons/md";
 import { FaBell } from "react-icons/fa";
 
+
+
 const ProfilePage = () => {
   return (
     <div className="profile-page">
