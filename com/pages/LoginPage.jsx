@@ -4,7 +4,7 @@ const LoginPage = () => {
   return (
     <div className="container">
       <div className="title">
-        <Header />
+        <Header page="Login" />
         <h2>A Farmer's Friend</h2>
       </div>
       {/* <h1 class="title">🌾AgroSense,A Farmer Friend🌾</h1> */}
