@@ -1,16 +1,17 @@
 import { Fragment } from "react";
 
-const Header = (page = "other") => {
+const Header = ({ page }) => {
   if (page === "Login") {
-    // In the Header section, show the logo and profile button on the left side.
+    // In the Header section, show the logo
     // And below the logo: "A Farmer's Friend"
     return (
-      <Fragment>
-        <img src="../assets/logo.png" alt="AgroSense Logo" height={50} />
+      <div className="flex items-center justify-center gap-4">
+        <img src="../assets/logo.png" alt="AgroSense Logo" className="h-20" />
         <h2>A Farmer's Friend</h2>
-      </Fragment>
+      </div>
     );
   } else if (page === "Main") {
+    // addition of profile
     return (
       <Fragment>
         <img src="../assets/logo.png" alt="AgroSense Logo" height={50} />
@@ -18,9 +19,9 @@ const Header = (page = "other") => {
     );
   }
   return (
-    <Fragment>
-      <img src="../assets/logo.png" alt="AgroSense Logo" height={50} />
-    </Fragment>
+    <div className="flex items-center justify-center gap-4">
+      <img src="../assets/logo.png" alt="AgroSense Logo" className="h-10" />
+    </div>
   );
 };
 export default Header;
